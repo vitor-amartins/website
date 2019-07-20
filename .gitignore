@@ -1,0 +1,6 @@
+venv/
+.vscode/
+*.pyc
+.env
+db.sqlite3
+development.py
