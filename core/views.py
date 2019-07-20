@@ -15,3 +15,7 @@ def tree(request):
 class LinkList(generics.ListAPIView):
     queryset = Link.objects.all()
     serializer_class = LinkSerializer
+
+
+def react(request):
+    return render(request, "build/index.html")
