@@ -12,6 +12,6 @@ def tree(request):
     return render(request, "tree.html", {"links": links})
 
 
-class LinkList(generics.ListCreateAPIView):
+class LinkList(generics.ListAPIView):
     queryset = Link.objects.all()
     serializer_class = LinkSerializer
