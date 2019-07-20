@@ -3,5 +3,5 @@ venv/
 *.pyc
 .env
 db.sqlite3
-development.py
-node_modules/
+# Add development.py to gitignore when pushing to Dokku
+# development.py

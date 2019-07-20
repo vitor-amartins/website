@@ -1,6 +1,7 @@
 from django.db import models
 from core.utils import COLOR_CHOICES
 
+
 class Link(models.Model):
     link = models.CharField("Link", max_length=200)
     descricao = models.CharField("Descrição", max_length=100)
