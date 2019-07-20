@@ -3,6 +3,8 @@ from .base import *
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
+DEBUG = os.environ['DEBUG']
+
 ALLOWED_HOSTS = ['vitormartins.dev', 'www.vitormartins.dev']
 
 DATABASES = {
