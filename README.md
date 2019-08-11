@@ -54,11 +54,12 @@
     ```dokku letsencrypt:cron-job --add```
 
     ```dokku letsencrypt:auto-renew```
+    
+1. Conecte o armazenamento persistente do Dokuu com o Django:
 
+    ```dokku storage:mount app-name /var/lib/dokku/data/storage:/vitor/static```
+    
 1. Configurar os arquivos estáticos:
 
     ```dokku run app-name python manage.py collectstatic```
 
-1. Conecte o armazenamento persistente do Dokuu com o Django:
-
-    ```dokku storage:mount app-name /var/lib/dokku/data/storage:/vitor/static```
